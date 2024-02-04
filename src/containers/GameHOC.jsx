@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Game from "../components/Game"
 import data from "../store/data"
+import Win from "../components/Win"
 
 const GameHOC = () => {
   const [state, changeState] = useState({
@@ -31,6 +32,7 @@ const GameHOC = () => {
 
 const nextLevel =() => {
   data.level = (data.level + 1) % data.matrix.length
+
 }
   return <Game
     coords={state.coords}

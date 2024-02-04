@@ -21,6 +21,9 @@ const Game = props => {
     props.nextLevel()
     navigate("/won")
 
+    if (level = 5){
+      navigate("/win")
+    }
 
   }, [props, navigate] ) 
 

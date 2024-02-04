@@ -10,6 +10,7 @@ const BaseRouter = () => {
     return (
         <Routes>
             <Route path="/" element={<Menu />} />
+            <Route path="/win" element={<Win />} />
             <Route path="/won" element={<Won />} />
             <Route path="/lost" element={<Lost />} />
             <Route path="/game" element={<GameHOC />} />
