@@ -21,7 +21,7 @@ const Game = props => {
     props.nextLevel()
     navigate("/won")
 
-    if (level = 5){
+    if (level = 2){
       navigate("/win")
     }
 
